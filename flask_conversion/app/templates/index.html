@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+{% block content %}
+  
+   
+   <div id="forest" class="fst"><div style="height: 45px;"></div>
+      <h1 class="fsth">&amp; Wood Enough For All</h1>
+      <h2 class="fsth"><a href="{{ url_for('main.faq') }}">FAQ</a> &#8486; <a href="{{ url_for('main.specs') }}">Specifications</a> &#8486; <a href="{{ url_for('main.woodcoin') }}">Whitepaper</a> &#8486; <a href="http://logaddress.org/index.html">Paper Notes</a></h2>
+      <p>Tired of mining?  Try chopping wood!  Woodcoin is a public digital currency. Its unit of exchange is LOG. It is similar to other cryptocurrencies like bitcoin.  Woodcoin began in October 2014.  Old site archived <a href="http://archive.woodcoin.org">here</a>.  <a href="http://archive.woodcoin.org/index.php/category/chinese/">中文</a><a href="http://vixra.org/abs/1602.0172">[DE]</a><a href="http://vixra.org/abs/1607.0009">[ES]</a></p>
+      <br/>
+      <ul>
+      <li>Woodcoin was created to solve a problem which exists with the supply economics of many public coins: they have a reward schedule which either drops too quickly (like Bitcoin and Litecoin) or too slowly (like Dogecoin and Etherium). <br><br></li>
+      <li>What will happen when Bitcoin's reward becomes very small?  It is said that fees will support the network, however users might choose to flee to other coins at that time rather than pay those fees.  New users will feel the existing distribution is unfair and will flee to other coins.  Woodcoin&rsquo;s reward decrease is a harmonic series, which more closely models renewable resources than nonrenewable ones. This means that while it is always better to chop LOGs today, there will still always be an incentive to chop tomorrow - even before fees are considered. <br><br></li>
+      <li>The logarithmic money supply curve is designed for stability and longevity,  with the longest reward schedule of any other cryptocurrency.  Half the LOGs wll be released in the first 200 years, instead of the first 4 years (BTC).  However, every block is worth less than the preceding one - so ealier adopters are always rewarded.  <br><br></li>
+      <li>Woodcoin features solid crypo in proof of work function (Double Skein hash) and in digital signature keypairs (X9_62_prime256v1).</li>
+      </ul>
+      <br/>
+      <div align="center"><img src="{{ url_for('static', filename='img/etc/woodcoin-v-bitcoin-distribution.png') }}" height="270" width="450" alt="Here is a plot of the Daily rewards comparing BTC released per day to LOG released per day for the next  45 years.  For more on the economics of a logarithmically increasing money supply read the whitepaper."><br/></div><span class="caption">Here is a plot of the Daily rewards comparing BTC released per day to LOG released per day for the next  45 years.  For more on the economics of a logarithmically increasing money supply, read the <a href="woodcoin.pdf">whitepaper</a>.</span>
+     
+      <footer>
+        Many icons designed by <a href="http://freepik.com" target="_blank">Freepik</a>. 
+     </footer> 
+     
+   </div>
+  
+{% endblock %}
+ 

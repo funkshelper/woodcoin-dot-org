@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+{% block content %}
+<div id="forest" class="fst"><div style="height: 45px;"></div>
+  <h1 class="fsth">&amp; Wood Enough For All</h1>
+  <h2 class="fsth"><a href="{{ url_for('main.faq') }}">FAQ</a> &#8486; <a href="{{ url_for('main.specs') }}">Specifications</a> &#8486; <a href="{{ url_for('main.woodcoin') }}">Whitepaper</a> &#8486; <a href="http://logaddress.org/index.html">Paper Notes</a></h2>
+  
+  <p>The following are supported, official Woodcoin downloads.</p>
+  <ul>
+  <li>Woodcoin-QT</li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Official graphical wallet.</em></span></li>
+  <li>woodcoind</li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Official headless client for servers and non-graphical users.</em></span></li>
+  <li>Vanitygen for Woodcoin</li>
+  <li style="list-style-position: inside; margin-left: 25px; list-style-type: none;"><span class="caption"><em>Allows advanced dwarves to create custom log addresses for daily use.</em></span></li>
+  </ul>
+  
+ <p>It is never the habit of a good dwarf to use someone else's sharpened hatchet, but it is understood that one does not always have time to run the forge. The best policy for anyone is to pull the code from the right and compile it themselves. Anything in the <a href="https://github.com/funkshelper/woodcoin/" target="_blank">official repository</a> is current and supported.</p>
+ 
+  <footer>
+    Many icons designed by <a href="http://freepik.com" target="_blank">Freepik</a>. 
+  </footer>
+</div> 
+   
+{% endblock %} 
